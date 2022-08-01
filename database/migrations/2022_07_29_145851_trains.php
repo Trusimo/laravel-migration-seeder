@@ -24,6 +24,7 @@ class Trains extends Migration
             $table->smallInteger("numero_carrozze");
             $table->boolean("in_orario")->default(1);
             $table->boolean("cancellato")->default(0);
+            $table->timestamps();
         });
     }
 
